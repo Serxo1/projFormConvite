@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div id="app">
+        <aside>
+            <div class="aside-container">
+                <header class="flex column left gap16">
+                    <img src="assets/icons/Logo.svg" alt="">
+                    <img src="assets/icons/logotext.svg" alt="">
+                    <span>Crie um convite digital para o seu evento</span>
+                </header>
+
+                <img src="assets/Illustration.svg" alt="">
+            </div>
+        </aside>
+
+        <main>
+            <div class="main-container">
+            <form enctype="multipart/form-data">
+                <h1>Crie seu convite</h1>
+
+                <fieldset>
+                    <div class="fieldset-wrapper flex">
+                    <img src="assets/icons/calendar.svg" alt="">
+                    <legend>Sobre o evento</legend>
+                    </div>
+                    <div class="input-wrapper flex column">
+                        <label for="event-name">Titulo</label>
+                        <input type="text" id="event-name" name="event-name" placeholder="Nome do evento">
+                    </div>
+                    <div class="flex">
+                    <div class="input-wrapper flex column">
+                        <label for="event-date">Inicio</label>
+                        <input type="datetime" id="event-date" name="start-date">
+                        </div>
+                        <div class="input-wrapper flex column">
+                            <label for="event-date">Fim</label>
+                            <input type="datetime" id="event-date" name="end-date">
+                        </div>
+                    </div>
+                    <div class="flex">
+                    <div class="input-wrapper flex column">
+                        <label for="type">Tipo</label>
+                        <div class="radio-inner">
+                        <input type="radio" id="presencial" name="type" value="presencial">
+                        <label for="presencial">Presencial</label>
+                        <input type="radio" id="online" name="type" value="online">
+                        <label for="online">Online</label>
+                        </div>
+                        </div>
+                        <div class="input-wrapper flex column">
+                            <label for="event-location">Local</label>
+                            <input type="text" id="event-location" name="event-location" placeholder="Local do evento">
+                        </div>
+                    
+                </div>
+
+                <div class="input-wrapper flex column">
+                    <label for="event-description">Descrição</label>
+                    <textarea id="event-description" name="event-description" placeholder="Descrição do evento"></textarea>
+                </div>
+
+
+                </fieldset>
+            </form>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

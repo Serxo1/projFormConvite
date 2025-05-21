@@ -1,0 +1,56 @@
+:root{
+    box-sizing: border-box;
+    /* brand*/
+    --brand-light:#59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1d6fb6;
+
+    /* accent colors*/
+    --accent-purple: #B259FF;
+    --accent-fuschia: #FF59F9;
+    --accent-pink: #FF598B;
+    --accent-orange: #FF8B59;
+    --accent-yellow: #FFCD59;
+    --accent-lime: #E1FF59;
+    --accent-green: #59FF91;
+    --accent-cyan: #59FFF9;
+    --accent-navy: #6A59FF;
+
+    /* feedback*/
+    --danger: #FF5959;
+
+    /* input*/
+    --input-base: #1c1f21;
+    --input-stroke: #363b40;
+    --input-placeholder:#869198;
+
+    /*shape*/
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
+
+     /* text */
+    --text-body: #C8CDd0;
+    --text-heading: #F9F9F9;
+
+    /* font families */
+    --font-heading: 'Baloo 2', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    /* font sizes */
+    --font-size-heading-md: bold 1.75rem var(--font-heading);
+    --font-size-heading-sm: bold 1.125rem var(--font-heading);
+    --font-size-body-md: 500 1rem var(--font-body);
+    --font-size-body-sm: 500 0.875rem var(--font-body);
+    --font-size-body-xs: 500 .75rem var(--font-body);
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--shape-background);
+    color: var(--text-body);
+}
