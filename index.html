@@ -34,24 +34,31 @@
                         <label for="event-name">Titulo</label>
                         <input type="text" id="event-name" name="event-name" placeholder="Nome do evento">
                     </div>
-                    <div class="flex">
+                    <div class="flex gap">
                     <div class="input-wrapper flex column">
                         <label for="event-date">Inicio</label>
-                        <input type="datetime" id="event-date" name="start-date">
+                        <input type="datetime-local" id="event-date" name="start-date">
                         </div>
                         <div class="input-wrapper flex column">
                             <label for="event-date">Fim</label>
-                            <input type="datetime" id="event-date" name="end-date">
+                            <input type="datetime-local" id="event-date" name="end-date">
                         </div>
                     </div>
-                    <div class="flex">
-                    <div class="input-wrapper flex column">
+                    <div class="flex gaptype">
+                    <div class=" input-wrapper flex column">
                         <label for="type">Tipo</label>
-                        <div class="radio-inner">
-                        <input type="radio" id="presencial" name="type" value="presencial">
-                        <label for="presencial">Presencial</label>
-                        <input type="radio" id="online" name="type" value="online">
-                        <label for="online">Online</label>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="presencial" name="type" value="presencial" class="radio-input" checked>
+                            <label for="presencial" class="radio-label">
+                            <img src="assets/icons/building-2.svg" alt="">
+                            Presencial
+                            </label>
+
+                            <input type="radio" id="online" name="type" value="online" class="radio-input">
+                            <label for="online" class="radio-label">
+                            <img src="assets/icons/video.svg" alt="">
+                            Online
+                            </label>
                         </div>
                         </div>
                         <div class="input-wrapper flex column">
@@ -63,10 +70,15 @@
 
                 <div class="input-wrapper flex column">
                     <label for="event-description">Descrição</label>
-                    <textarea id="event-description" name="event-description" placeholder="Descrição do evento"></textarea>
+                    <textarea id="event-description" name="event-description" placeholder="Descrição do evento" rows="10"></textarea>
                 </div>
+                </fieldset>
 
-
+                <fieldset>
+                    <div class="fieldset-wrapper flex">
+                    <img src="assets/icons/paintbrush-vertical.svg" alt="">
+                    <legend>Personalização</legend>
+                    </div>
                 </fieldset>
             </form>
             </div>

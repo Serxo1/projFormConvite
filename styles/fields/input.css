@@ -1,0 +1,32 @@
+input,textarea,select{
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    padding: 1rem;
+    background-color: var(--input-base);
+    font: var(--text-body);
+    color: var(--text-placeholder);
+    min-height:2rem ;
+
+    &::-webkit-calendar-picker-indicator{
+        opacity: 0;
+    }
+
+    
+   
+}
+
+.input-wrapper >label:first-of-type{
+    margin-top: 1rem;
+}
+
+.input-wrapper {
+    width: 100%;
+    /* display: flex; */
+    /* margin-bottom: 1rem; */
+}
+
+.flex.column >label:first-of-type{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,52 @@
+/* Esconde o input radio padrão */
+.radio-input {
+  display: none;
+}
+
+/* Estiliza o label como botão */
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem; /* Menos padding vertical, mais horizontal */
+  border-radius: .75rem;
+  cursor: pointer;
+  color: var(--text-placeholder);
+  background: transparent;
+  border: 2px solid transparent;
+  font: var(--text-body);
+}
+
+/* Espaçamento entre os botões */
+.radio-wrapper {
+  display: flex;
+  gap: 1rem;
+  background: var(--input-base);
+  padding: .57rem;
+  border-radius: .75rem;
+  border: 1px solid var(--input-stroke);
+
+  img{
+    width: 1rem;
+    aspect-ratio: 1;
+  }
+
+}
+
+/* Checked */
+.radio-input:checked + .radio-label {
+  background-color:#2D3136;
+  color: var(--text-heading);
+
+}
+
+/* Focus visível para acessibilidade */
+.radio-input:focus-visible + .radio-label {
+  outline: 2px solid var(--primary, #7c3aed);
+  outline-offset: 2px;
+}
+
+/* Ícone colorido quando selecionado */
+.radio-input:checked + .radio-label img {
+  filter: brightness(1.5) saturate(2) drop-shadow(0 0 2px var(--primary, #7c3aed));
+}
